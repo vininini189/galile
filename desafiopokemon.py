@@ -41,5 +41,18 @@ def dano_critico (escolha):
     dano_critico = pokemon[escolha]['dano'] * random.uniform(1,2)
     print(f'O dano_critico do {escolha} é de {dano_critico:.2f}')
     
-dano_critico(escolha1)
-dano_critico(escolha2)
+d1 = dano_critico(escolha1)
+d2 = dano_critico(escolha2)
+print(f'o dano_critico do {escolha} é de')
+#criem uma função chamado batalha (danocritico1, denocritico2)
+def batalha (dano1, dano2):
+  vida1 = 100 -  dano2
+  vida2 = 100 - dano1
+
+if vida1 > vida2:
+      print(f' o vencedor é o player1 , vida restante {vida1:.2f}')
+  print(f' o vencedor é o player2 , vida restante {vida2:.2f}')
+
+batalha(d1,d2)
+#cada pokemon tem 100 de vida 
+#no final dessa batalha, mostre o vencedor
